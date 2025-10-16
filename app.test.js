@@ -2,15 +2,13 @@
 const request = require("supertest")
 // import app from "./cicd.js"
 const app = require("./cicd")
-let server; // Declare a variable for the server
+let server;
 
 beforeAll((done) => {
-    // Start the server and save the instance
     server = app.listen(done);
 });
 
 afterAll((done) => {
-    // Close the server instance
     server.close(done);
 });
 

@@ -12,3 +12,5 @@ app.get("/", (req, res) => {
 
 module.exports = app;
 // export default app
+
+// ssh username@ip_address -p 21098
